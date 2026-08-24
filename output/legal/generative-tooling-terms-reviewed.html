@@ -25,7 +25,7 @@
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#282661">
 
-  <title>Mailing Lists | Apache Software Foundation</title>
+  <title>Generative AI Tool Terms: Review Results (Draft) | Apache Software Foundation</title>
   <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
   <link href="/css/OpenSans.css" async rel="stylesheet">
   <link href="/css/min.bootstrap.css" async rel="stylesheet">
@@ -47,7 +47,7 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#pagefind-search" });
     });
-    var pageTitle = 'Mailing Lists';
+    var pageTitle = 'Generative AI Tool Terms: Review Results (Draft)';
     if(pageTitle === '404'){
       window.addEventListener('DOMContentLoaded', (event) => {
           new PagefindUI({ element: "#page-404-search" });
@@ -58,7 +58,7 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
 
 <!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
   <script>
-    var pageTitle = 'Mailing Lists';
+    var pageTitle = 'Generative AI Tool Terms: Review Results (Draft)';
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before
 "trackPageView" */
@@ -227,334 +227,421 @@ s=d.getElementsByTagName('script')[0];
                     <div class="flex-2 hero-title">
                         <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
                         <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
-                            <h1>Mailing Lists</h1>
+                            <h1>Generative AI Tool Terms: Review Results (Draft)</h1>
                     </div>
                         <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
                 </div>
             </div>
 
   <main id="maincontent">
-<div class="inner inner--default py-xl">    <p>Publicly archived mailing lists are critical to the operation of the Apache Software
-Foundation (ASF) and to our many <a href="https://projects.apache.org/">Apache
-Projects</a>.  Apache projects use mailing lists to coordinate
-development of their software and administer their organization. Mailing
-lists also serve as a primary support channel where users can help each
-other learn to use the software.</p>
-<p>Mailing list participants are expected to abide by the well-established rules of
-"netiquette", as well as the ASF's published <a href="/foundation/policies/conduct.html">Code of Conduct</a>.
-We also have <a href="../dev/contrib-email-tips.html">Tips for email
-contributors</a>.</p>
-<p>Please be aware that email sent to Apache developer or user mailing lists is subject to our
-<a href="public-archives.html">Public Forum Archive Policy</a>.</p>
-<p>Note that some Apache mailing lists are not public; they are often but not always named
-<strong>private@</strong>. Be sure not to take emails from private discussions or mailing lists
-into a public forum or list unless there is agreement by all parties to the conversation.</p>
-<h2 id="moderation-of-posts">Moderation of posts<a class="headerlink" href="#moderation-of-posts" title="Permalink">&para;</a></h2>
-<p>Most lists require a poster to be subscribed.
-If you are not subscribed, your post requires moderation.
-This may take hours or days, so it's best to subscribe (as described below) before posting.</p>
-<h2 id="subscribing">Subscribing and Unsubscribing<a class="headerlink" href="#subscribing" title="Permalink">&para;</a></h2>
-<p>Unless otherwise noted, ASF lists are managed by
-<a href="http://untroubled.org/ezmlm/">ezmlm</a>, which lets users subscribe or unsubscribe by sending an email to a special address.
-This works as follows:</p>
+<div class="inner inner--default py-xl">    <p><strong>This page is a draft under review on legal-discuss. It is not yet ASF guidance.</strong></p>
+<div id="toc"><ul><li><a class="toc-href" href="#category-a" title="Category A">Category A</a></li><li><a class="toc-href" href="#category-b" title="Category B">Category B</a></li><li><a class="toc-href" href="#category-x" title="Category X">Category X</a></li><li><a class="toc-href" href="#not-classified" title="Not classified">Not classified</a></li><li><a class="toc-href" href="#updates" title="Updating this page">Updating this page</a></li></ul></div>
+<p>This page records the results of a review of generative AI tool terms of use against the question described in <a href="/legal/generative-tooling-terms.html">Checking a Generative AI Tool's Terms of Use</a>: whether the terms place restrictions on generated output that would be inconsistent with the <a href="https://opensource.org/osd/">Open Source Definition</a>. The categories are explained on the <a href="/legal/generative-tooling-terms-categories.html">What to Look For</a> page.</p>
+<p>Read the following before using the tables, because they limit what a row means:</p>
 <ul>
-<li>Send the request to the appropriate address (see below)</li>
-<li>ezmlm sends a reply; either a confirmation request or an error message (e.g. if you are not subscribed)</li>
-<li>Reply to the confirmation message</li>
+<li><strong>Follow the row that matches your exact use.</strong> Each row records what the named terms said when they were reviewed; if you think a row should not apply to your situation, raise it on legal-discuss. A row is limited to the exact tool, tier, and access path named in it; a different tier of the same product is a different row, and often a different answer.</li>
+<li><strong>The review date matters.</strong> Each row shows the date its terms were reviewed, and rows are re-checked and updated individually, so dates differ across the page. Vendors change terms frequently; if the terms have changed since the row's date, the row no longer applies. Corrections and updates are welcome on <a href="/foundation/mailinglists.html#foundation-legal">legal-discuss@</a>.</li>
+<li><strong>Where obtained public terms are silent</strong> on output ownership or redistribution, this review treats that silence as leaving the output unrestricted, consistent with the guidance's condition that the terms not <em>place</em> restrictions. Silence is different from not having the terms: rows whose governing terms could not be obtained are listed as not classified, and that is not a clearance.</li>
+<li><strong>Category A here answers one question only.</strong> It does not address the guidance's other conditions (such as copied third-party material in the output), copyright provenance, confidentiality of what you put into the tool, or code quality. Normal contribution review always still applies.</li>
 </ul>
-<p>ASF committers can also use the Whimsy <a href="https://whimsy.apache.org/committers/subscribe">Mailing List Self-subscription</a> service.</p>
-<h2 id="request-addresses-for-unsubscribing">Request addresses for [un]subscribing<a class="headerlink" href="#request-addresses-for-unsubscribing" title="Permalink">&para;</a></h2>
-<p>If you want to subscribe
-to <code><em>list</em>@<em>project</em>.apache.org</code>, you need to send a message to</p>
-<pre>
-<em>list</em>-subscribe@<em>project</em>.apache.org
-</pre>
-<p>To get off a list, send a message to</p>
-<pre>
-<em>list</em>-<b>un</b>subscribe@<em>project</em>.apache.org
-</pre>
-<p>To unsubscribe a different e-mail - e.g.
-you used to be subscribed as <strong><code>user@oldname.example</code></strong> - send a message
-to</p>
-<pre>
-<em>list</em>-unsubscribe-<b>user=oldname.example</b>@<em>project</em>.apache.org
-</pre>
-<p><em>The list moderators can also do this.</em></p>
-<p>If you do not recall the address you used when you subscribed, view the full headers
-of any email you received from the list and examine the <code>Return-Path</code>,
-<code>Received</code>, and <code>List-ID</code> headers; these should embed both the address you are
-subscribed as and the address of the mailing list.</p>
-<p>Note: Spam filters don't like messages with empty Subjects; just put
-"subscribe" or "unsubscribe" in the header field. Spam filters are also more likely to reject
-HTML-formatted messages; please use plain text.</p>
-<h2 id="request-confirmation">Request confirmation<a class="headerlink" href="#request-confirmation" title="Permalink">&para;</a></h2>
-<p>After you send the subscribe or unsubscribe request, the list manager
-sends you a confirmation e-mail in reply. <strong>You must reply to this e-mail to
-complete the process.</strong> If you have not received the confirmation request,
-check that it has not been marked as spam.</p>
-<p><strong>Note: private lists generally require a moderator to confirm the subscription</strong>.
-This may take a day or two. If necessary, try again after a few days.
-For this reason we recommend that ASF and PMC members use
-<a href="https://whimsy.apache.org/committers/subscribe">the self-subscribe app</a> to avoid having to wait for the human moderators to check and green-light your subscription request.</p>
-<h2 id="other-list-commands">Other list commands<a class="headerlink" href="#other-list-commands" title="Permalink">&para;</a></h2>
-<p>To find out more about a list's features, including how to contact the list owner (moderator),
-send a message to</p>
-<pre>
-<em>list</em>-help@apache.org
-</pre>
-<p>Ezmlm lists also generally provide subscribers with a way to request
-specific past messages or ranges of messages: send mail to the list's help
-address to find out more. This can act as a sort of 'poor man's archive' if
-the normal archives are inaccessible or don't exist.</p>
-<p>All ASF committers can get a list of (a) what email addresses are known to the
-ASF as belonging to them (b) what mailing lists they are moderating, and (c)
-what mailing lists they are subscribed to by going to the following page:</p>
-<p><a href="https://whimsy.apache.org/roster/committer/__self__">https://whimsy.apache.org/roster/committer/__self__</a></p>
-<h2 id="digest-subscriptions">Digest Subscriptions<a class="headerlink" href="#digest-subscriptions" title="Permalink">&para;</a></h2>
-<p>You can also subscribe to most mailing lists in digest form. To do this for <tt><em>list</em>@apache.org</tt>, send a message to</p>
-<pre>
-<em>list</em>-digest-subscribe@apache.org
-</pre>
-<p>To get off a digest list, send a message to</p>
-<pre>
-<em>list</em>-digest-<b>un</b>subscribe@apache.org
-</pre>
-<p>If you need to unsubscribe a different email or get help with a digest list the same instructions as for subscribing/unsubscribing
-above apply. Just remember to add <em>-digest</em> after the list name and before the <em>-subscribe</em> or <em>-unsubscribe</em>.</p>
-<h2 id="moderators">Moderators<a class="headerlink" href="#moderators" title="Permalink">&para;</a></h2>
-<p>Each mailing list generally has several moderators who look after the list.
-For further information, see the
-<a href="/dev/committers.html#mail">Committers FAQ - Mail Questions</a></p>
-<h2 id="archives">Mailing List Archives<a class="headerlink" href="#archives" title="Permalink">&para;</a></h2>
-<p>Archives for public mailing lists are available at a number of locations,
-including:</p>
-<ul>
-<li>
-<p><a href="https://lists.apache.org/">Apache mail archives</a></p>
-</li>
-<li>
-<p><a href="http://marc.info/">MARC</a></p>
-</li>
-<li>
-<p><a href="http://mail-archive.com/">mail-archive.com</a></p>
-</li>
-</ul>
-<h2 id="project-mailing-lists">Project Mailing Lists<a class="headerlink" href="#project-mailing-lists" title="Permalink">&para;</a></h2>
-<p>Links to project-specific mailing list info can be found on the <a href="https://projects.apache.org/projects.html">project
-resources page</a>.</p>
-<p>Tip: if you have a technical question of any kind, the best place to ask is the
-user@ or dev@ list for the relevant project - Foundation level mailing lists
-or other Apache contact emails (including individuals' emails) will not be able to help you</p>
-<h2 id="foundation-wide-mailing-lists">Foundation-wide Mailing Lists<a class="headerlink" href="#foundation-wide-mailing-lists" title="Permalink">&para;</a></h2>
-<ul>
-<li>
-<p><a href="#foundation-announce">Apache News and Announcements</a></p>
-</li>
-<li>
-<p><a href="#foundation-apachecon">Conference Announcements list</a></p>
-</li>
-<li>
-<p><a href="#foundation-community">Community discussions</a></p>
-</li>
-<li>
-<p><a href="#foundation-infrastructure">Infrastructure assistance</a></p>
-</li>
-<li>
-<p><a href="#foundation-legal">Legal discussions</a></p>
-</li>
-</ul>
-<h2 id="foundation-announce">Apache News and Announcements<a class="headerlink" href="#foundation-announce" title="Permalink">&para;</a></h2>
-<p>The Apache Announcements list contains news and announcements about the
-foundation and its projects. It includes announcements of major software releases, new
-projects, and other important news. This list only includes Messages posted by the Foundation; there is no discussion.</p>
-<p>You may also be interested in
-our official <a href="https://twitter.com/TheASF">@TheASF Twitter</a> account, or the
-<a href="https://blogs.apache.org/foundation/">official ASF Blog</a>.</p>
+<h2 id="category-a">Category A<a class="headerlink" href="#category-a" title="Permalink">&para;</a></h2>
+<p>For these rows the full public terms governing the exact tier were obtained and contained no restriction following the generated output. Ordinary generated output from the exact tier listed may be treated as meeting the terms condition of the guidance, as of the review date.</p>
 <table class="table">
 <thead>
 <tr>
-<th>Volume:</th>
-<th>Low</th>
+<th>Vendor / tool</th>
+<th>Tier or access path</th>
+<th>Notes</th>
+<th>Reviewed</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Subscription address:</td>
-<td><a href="mailto:announce-subscribe@apache.org">announce-subscribe@apache.org</a></td>
+<td>GitHub Copilot</td>
+<td>Business (public terms)</td>
+<td>Custom order forms are separate.</td>
+<td>2026-08-11</td>
 </tr>
 <tr>
-<td>Unsubscription address:</td>
-<td><a href="mailto:announce-unsubscribe@apache.org">announce-unsubscribe@apache.org</a></td>
+<td>GitHub Copilot</td>
+<td>Individual Free, Pro, Pro+</td>
+<td>GitHub trains on individual Inputs and Outputs by default unless you opt out in account settings (a data-use issue, not an output-rights one).</td>
+<td>2026-08-11</td>
 </tr>
 <tr>
-<td>Archives:</td>
-<td><a href="http://lists.apache.org/list.html?announce@apache.org">Web archives</a><br/><a href="http://www.mail-archive.com/announce@apache.org/">archives</a></td>
+<td>OpenAI ChatGPT</td>
+<td>Free, Plus, Pro</td>
+<td>You own the output.</td>
+<td>2026-08-11</td>
 </tr>
 <tr>
-<td>Getting help with the list:</td>
-<td><a href="mailto:announce-help@apache.org">announce-help@apache.org</a></td>
+<td>OpenAI ChatGPT Team / Business, OpenAI API, Codex CLI</td>
+<td>Public terms</td>
+<td>You own the output. Note that ChatGPT Voice Output is for non-commercial use only; this does not affect code.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Anthropic Claude (claude.ai)</td>
+<td>Free, Pro, Max</td>
+<td>Consumer terms.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Anthropic Claude</td>
+<td>Team, API (public commercial terms)</td>
+<td></td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Anthropic Claude Code</td>
+<td>Backed by Pro/Max subscription or API</td>
+<td>Governed by the consumer or commercial terms above.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Cursor</td>
+<td>Hobby, Pro, Ultra</td>
+<td>Teams (if under MSA) are not covered.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Google Gemini Business</td>
+<td>Business</td>
+<td></td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Google Gemini API / AI Studio</td>
+<td>Free and Paid, ordinary generated output</td>
+<td>Google claims no ownership of generated content. Grounding and Robotics features are Category X, see below. The unpaid tier may use your prompts and responses for product and ML improvement (a data-use issue); API clients in the EEA, Switzerland, and UK must use the paid service.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Google Gemini web/app</td>
+<td>Consumer free</td>
+<td>Outputs are yours; Google claims no ownership. Note that the terms bar misrepresenting generated content as created solely by a human in order to deceive. Signed-in chats and generated content may be used, including via human review, to improve services and train models unless you turn off Gemini Apps Activity (a data-use issue, not an output-rights one).</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Google Gemini web/app</td>
+<td>Advanced (Google One / AI Pro / AI Ultra)</td>
+<td>Same terms as the free tier; the paid addendum covers AI-credit payment mechanics only and changes no output rights.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Claude via AWS Bedrock</td>
+<td>Pay-per-use</td>
+<td>Output is Your Content, and Anthropic claims no ownership of prompts or outputs. Bedrock models that attach Provenance Data are Category X, see below; nothing indicates Claude's text or code output carries any.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Amazon Q Developer</td>
+<td>Free</td>
+<td>Output is Your Content. AWS may use Free-tier content, including generated code, to improve its services and train models unless you opt out (a data-use issue, not an output-rights one).</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Amazon Q Developer</td>
+<td>Pro</td>
+<td>Output is Your Content. Unlike the Free tier, Pro content is not used for service improvement or model training, and Pro is covered by AWS's generative AI indemnity.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Claude via Vertex AI</td>
+<td>Pay-per-use</td>
+<td>Customer owns all Outputs; Anthropic assigns any right it has in them and may not train on Customer Content. The governing terms are dated March 2024, and the acceptance point is a click-through in the Vertex AI Model Garden console, so check the version shown to you at model-grant time.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Google Gemini via Vertex AI</td>
+<td>Pay-per-use, ordinary generated output</td>
+<td>Generated Output is Customer Data; Google asserts no ownership in it. Grounding features are Category X, see below.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>xAI Grok</td>
+<td>Free, SuperGrok</td>
+<td>Input and Output are both "User Content" and you retain ownership. The terms are the same for both tiers; only billing differs. Logged-out use grants xAI the right to use your content for product improvement and model training with no opt-out; logged in you can opt out (a data-use issue, not an output-rights one).</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Replit AI / Agent</td>
+<td>Starter/Free, Core, Pro</td>
+<td>Teams not covered if separate terms apply.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Vercel v0</td>
+<td>Paid Pro / Premium</td>
+<td>The Free/Hobby tier is Category X (non-commercial limit).</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Tabnine</td>
+<td>Developer / Pro (paid)</td>
+<td>Accepted suggestions are deemed part of your code. If you use the model-switching feature, the selected third-party model's terms also apply. The Free tier is Category X.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>DeepSeek model weights, self-hosted</td>
+<td>V3-0324, V3.2, V3.2-Exp, V3.2-Speciale, R1, R1-0528, V4-Pro, V4-Flash-0731 (MIT-licensed versions, exact version only)</td>
+<td>DeepSeek-Coder and original V3 are Category X; DeepSeek hosted chat and API are Category B rows.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>OpenAI GPT-OSS 20B, self-hosted</td>
+<td>Model weights (Apache-2.0)</td>
+<td>Exact version only.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Qwen3-Coder, self-hosted</td>
+<td>Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct (exact versions only)</td>
+<td>Apache-2.0 weights, with nothing addressing ownership of or restrictions on generated output. Qwen3-Coder-Next carries the same licence tag but its licence file could not be obtained, and some Qwen2.5-Coder sizes are Category X; check the exact version.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Qwen3.8, self-hosted</td>
+<td>Qwen3.8-27B (exact version only)</td>
+<td>Unmodified Apache-2.0, copyright Alibaba Cloud, with nothing addressing generated output and no revenue or user threshold. The 2.4T flagship in the same family is licensed differently and is Category X, see below.</td>
+<td>2026-08-15</td>
+</tr>
+<tr>
+<td>Qwen2.5-Coder, self-hosted</td>
+<td>0.5B, 1.5B, 7B, 14B, 32B Instruct (exact versions only)</td>
+<td>Apache-2.0 weights, identical licence text across these five sizes, with nothing addressing generated output. The 3B and 3B-Instruct sizes in the same family are Category X, see below.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Lovable</td>
+<td>Free, paid</td>
+<td>The terms say you own any AI output generated for you. Don't use the output to train a competing model, review it before relying on it in high-risk contexts, and don't pass it off as human-written where that would mislead; those are obligations on you, not on your code's recipients.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Microsoft Phi-4, Phi-4 Mini, self-hosted</td>
+<td>Model weights, microsoft/phi-4 and microsoft/Phi-4-mini-instruct (exact versions only)</td>
+<td>Plain MIT, with nothing addressing generated output. The reasoning, flash-reasoning, and multimodal siblings each have their own licence file and are not covered.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Google Gemma 4, self-hosted</td>
+<td>Model weights, Gemma 4 family (exact versions only)</td>
+<td>Unmodified Apache-2.0, a change of licence track from Gemma 1 to 3n and from the specialised variants, which stay under the custom Gemma Terms of Use and are not covered here. The model card links a prohibited use policy governing what you may generate; it is not incorporated into the Apache-2.0 grant, and either way it binds whoever runs the model rather than following the output to people who receive your code.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Mistral Codestral Mamba, self-hosted</td>
+<td>Model weights, Mamba-Codestral-7B-v0.1 (exact version only)</td>
+<td>Plain Apache-2.0, with nothing addressing generated output. Despite the shared Codestral name, Codestral 22B is licensed differently and is Category X, see below.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Mistral Devstral Small, self-hosted</td>
+<td>Model weights, Devstral-Small-2-24B-Instruct-2512, Devstral-Small-2507, Devstral-Small-2505 (exact versions only)</td>
+<td>Plain Apache-2.0, with nothing addressing generated output. Devstral Small does not carry the revenue gate that puts Devstral 2 in Category X, despite the shared name.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>StackBlitz Bolt.new</td>
+<td>Teams, Enterprise</td>
+<td>StackBlitz claims no ownership in content you submit or create, and these plans carry a commercial-use grant. The terms say nothing about AI output at all, so this rests on the general content clause. Other tiers are Category X, see below.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>JetBrains AI Assistant, Junie</td>
+<td>Commercial Free / Paid tiers, including All Products Pack bundled</td>
+<td>Outputs are yours. JetBrains will not train on your inputs or outputs unless you expressly agree. The purchase terms behind a bundled subscription cover the transaction only and change no output rights. EAP is a separate row.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>JetBrains AI</td>
+<td>EAP / Early Access</td>
+<td>Covers the EAP program only, not the commercial tiers.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Zhipu GLM-5.2, self-hosted</td>
+<td>Model weights (MIT)</td>
+<td>Exact version only; other GLM versions not covered.</td>
+<td>2026-08-11</td>
 </tr></tbody></table>
-<h2 id="foundation-apachecon">Apache Conference Announcements<a class="headerlink" href="#foundation-apachecon" title="Permalink">&para;</a></h2>
-<p>The Apache Conference planning committee uses the <code>announce@ApacheCon.Com</code> mailing list to make announcements about conferences, conventions,
-and trade shows in which the Foundation is participating. Only the Foundation posts Messages on this list; there is no discussion.</p>
-<p>You may also be interested in the [Community Over Code website](<a href="https://communityovercode.apache.org/]">https://communityovercode.apache.org/]</a> or the [Events blog](<a href="https://blogs.apache.org/conferences/](https://news.apache.org/foundation/entry/category/events)">https://blogs.apache.org/conferences/](https://news.apache.org/foundation/entry/category/events)</a>.</p>
+<h2 id="category-b">Category B<a class="headerlink" href="#category-b" title="Permalink">&para;</a></h2>
+<p>For these rows nothing clearly blocks the output, but the listed handling condition is part of the answer. Meet the condition before relying on the output.</p>
 <table class="table">
 <thead>
 <tr>
-<th>Volume:</th>
-<th>Very low</th>
+<th>Vendor / tool</th>
+<th>Tier or access path</th>
+<th>Handling condition</th>
+<th>Reviewed</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Subscription address:</td>
-<td><a href="mailto:announce-subscribe@ApacheCon.Com">announce-subscribe@ApacheCon.Com</a></td>
+<td>Hugging Face hosted inference</td>
+<td>Free, Pro</td>
+<td>The platform terms do not resolve model-specific output terms; check the licence of the actual model used. Note that some model licences would be Category X (for example OpenRAIL-M, see below).</td>
+<td>2026-08-11</td>
 </tr>
 <tr>
-<td>Unsubscription address:</td>
-<td><a href="mailto:announce-unsubscribe@ApacheCon.Com">announce-unsubscribe@ApacheCon.Com</a></td>
+<td>OpenCode</td>
+<td>Zen / Pro managed tiers</td>
+<td>Output is assigned to you at the OpenCode layer; the connected model provider's terms still apply.</td>
+<td>2026-08-11</td>
 </tr>
 <tr>
-<td>Archives:</td>
-<td>Available back to 13 October 1999. Send a message to <a href="mailto:announce-help@ApacheCon.Com">announce-help@ApacheCon.Com</a> for information about accessing the archives.</td>
+<td>Kilo Code</td>
+<td>Kilo Pass, Teams</td>
+<td>Suggestions are assigned to you; the connected AI model's terms still apply, and some model licences would be Category X. Kilo takes a broad licence to uploaded customer data to improve its services (a data-use issue, not an output-rights one).</td>
+<td>2026-08-11</td>
 </tr>
 <tr>
-<td>Getting help with the list:</td>
-<td><a href="mailto:announce-help@ApacheCon.Com">announce-help@ApacheCon.Com</a></td>
+<td>OpenClaw</td>
+<td>Self-hosted (MIT)</td>
+<td>The client licence says nothing about output; classify the connected model or provider.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>GetOpenClaw hosted service</td>
+<td>Hosted</td>
+<td>Hosted terms are incomplete for output rights and provider-dependent; do not infer rights from the self-hosted MIT licence.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Microsoft Azure OpenAI Service</td>
+<td>Azure Customer Agreement / MCA</td>
+<td>Comply with the Enterprise AI Code of Conduct when generating: you must have rights to content you release and disclose that output is AI-generated. These obligations bind you as the customer, not downstream recipients of your code.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Microsoft 365 Copilot, Copilot Chat</td>
+<td>Business plans</td>
+<td>Same Code of Conduct handling as Azure OpenAI above.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>DeepSeek hosted chat/app, Open Platform API</td>
+<td>Hosted service, API</td>
+<td>Outputs are yours. If you publish DeepSeek output, verify it and mark it as AI-generated (a Generated-by line does this), and stay within the usage policy; these obligations are yours, not your code's recipients'. API operators exposing the service have separate end-user obligations.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Moonshot Kimi K2.x, self-hosted</td>
+<td>Kimi-K2-Base, K2-Instruct, K2-Instruct-0905, K2-Thinking, K2.5, K2.6, K2.7-Code (exact versions only)</td>
+<td>A modified MIT grant. Its one added condition is that a commercial product built on the model with more than 100 million monthly active users or US$20 million monthly revenue must show the version name in its user interface. That attaches to deploying the model, not to code it generated, so it does not reach people who receive your contribution. Kimi K3 carries a further restriction and is Category X; this row does not cover it.</td>
+<td>2026-08-14</td>
 </tr></tbody></table>
-<h2 id="foundation-apachecon-discuss">Apache Conference Planning and Discussions<a class="headerlink" href="#foundation-apachecon-discuss" title="Permalink">&para;</a></h2>
-<p>The <code>apachecon-discuss@apache.org</code> mailing list is for discussions of the future of ApacheCon, and future
-ApacheCons. (Discussions of current and upcoming ApacheCons which have been approved occur on other lists.)</p>
+<h2 id="category-x">Category X<a class="headerlink" href="#category-x" title="Permalink">&para;</a></h2>
+<p>For these rows the reviewed terms impose, or appear to impose, a condition inconsistent with contribution use. Do not contribute output generated under the listed conditions without asking on legal-discuss first. Where a row says the issue is feature-specific, it does not extend to other features or tiers.</p>
 <table class="table">
 <thead>
 <tr>
-<th>Volume:</th>
-<th>Moderate</th>
+<th>Vendor / tool</th>
+<th>Tier or access path</th>
+<th>Reviewed issue</th>
+<th>Reviewed</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Subscription address:</td>
-<td><a href="mailto:apachecon-discuss-subscribe@apache.org">apachecon-discuss-subscribe@apache.org</a></td>
+<td>Google Gemini API / AI Studio</td>
+<td>Free and paid, feature-specific only</td>
+<td>Grounding with Search and Grounding with Maps output carries display, caching, modification, and no-training restrictions, and Google retains rights in Maps data. Robotics Models carry a field-of-use restriction (no safety-critical use) that does not attach to output and is unlikely to arise for ASF work. Ordinary code generation is not covered by this finding.</td>
+<td>2026-08-11</td>
 </tr>
 <tr>
-<td>Unsubscription address:</td>
-<td><a href="mailto:apachecon-discuss-unsubscribe@apache.org">apachecon-discuss-unsubscribe@apache.org</a></td>
+<td>AWS Bedrock</td>
+<td>Models that attach Provenance Data, feature-specific only</td>
+<td>Where AWS documentation says a model marks its output with metadata, digital signatures, or watermarks (for example Amazon Titan Image Generator), neither you nor any end user may alter or remove that Provenance Data. That obligation reaches downstream recipients. Ordinary text and code output is not covered by this finding.</td>
+<td>2026-08-14</td>
 </tr>
 <tr>
-<td>Archives:</td>
-<td><a href="http://lists.apache.org/list.html?apachecon-discuss@apache.org">Web archives</a></td>
+<td>Google Gemini via Vertex AI</td>
+<td>Grounding with Google Search, Web Grounding for Enterprise, Grounding with Google Maps, feature-specific only</td>
+<td>Customer, end users, and third parties may not cache, syndicate, resell, analyse, or train on grounded results and search suggestions, and Google retains all rights in Maps data. The restriction is stated to bind end users and third parties, not only the customer. Ordinary text and code generation is not covered by this finding.</td>
+<td>2026-08-14</td>
 </tr>
 <tr>
-<td>Getting help with the list:</td>
-<td><a href="mailto:apachecon-discuss-help@apache.org">apachecon-discuss-help@apache.org</a></td>
+<td>Windsurf (Cognition)</td>
+<td>Free, Pro, Teams</td>
+<td>Internal-business-purpose grant, competing-products restriction, and export/sanctions conditions stated to apply to output.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Tabnine</td>
+<td>Free</td>
+<td>The free plan is not intended for commercial or business use.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Vercel v0</td>
+<td>Free / Hobby</td>
+<td>Hobby plan services are for personal or non-commercial use only.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>StackBlitz Bolt.new</td>
+<td>Free beta and individual paid tiers</td>
+<td>The licence to use the service is limited to personal use and not for resale or further distribution; only the Teams and Enterprise plans carry a commercial-use grant.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>DeepSeek-Coder, DeepSeek-V3 (original)</td>
+<td>Self-hosted model weights</td>
+<td>The DeepSeek License Agreement contains field-of-use restrictions that expressly extend to any use of the output, and requires the same restrictions to be passed to downstream recipients of the model.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Meta Llama 4, Code Llama, Llama 2</td>
+<td>Self-hosted model weights</td>
+<td>Acceptable-use policy and notice requirements follow redistribution; restrictions on using outputs to improve other models; large-scale commercial licence gate.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>BigCode StarCoder, StarCoder2</td>
+<td>Self-hosted model weights (OpenRAIL-M)</td>
+<td>The licence states it is not open source; use restrictions must be passed downstream and generated-code disclaimers are required.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Mistral Devstral 2</td>
+<td>Self-hosted model weights</td>
+<td>No licence rights at all if your company or employer's global monthly revenue exceeds US$20 million; extends to derivatives and combined works.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Mistral Codestral 22B, self-hosted</td>
+<td>Model weights, Codestral-22B-v0.1 (exact version only)</td>
+<td>The Mistral AI Non-Production License restricts use of the model to testing, research, personal or evaluation purposes in non-production environments, and bars supplying it commercially even free of charge. Mistral claims no ownership of output, but the restriction binds the act of generating, so running it to produce code for ASF work would itself breach the licence. It is written to flow down through derivatives.</td>
+<td>2026-08-14</td>
+</tr>
+<tr>
+<td>Moonshot Kimi K3</td>
+<td>Self-hosted model weights</td>
+<td>Model-as-a-Service businesses above a revenue threshold need a separate agreement before any commercial use, and large commercial products must display "Kimi K3" in their UI; the internal-use exemption excludes making outputs available to third parties.</td>
+<td>2026-08-11</td>
+</tr>
+<tr>
+<td>Qwen3.8 2.4T flagship, self-hosted</td>
+<td>Qwen3.8-2.4T-A95B and the FP8 variant (exact versions only; published under the parameter-count name, not the Max product name)</td>
+<td>A custom licence, not a standard open source one. Running a model-as-a-service or AI coding assistant business needs a separate licence from Alibaba once revenue passes US$50 million over twelve months, and any product above 100 million monthly active users or US$20 million monthly revenue must display the model name in its user interface.</td>
+<td>2026-08-15</td>
+</tr>
+<tr>
+<td>Qwen2.5-Coder-3B, Qwen2.5-Coder-3B-Instruct, self-hosted</td>
+<td>Model weights (Qwen Research License Agreement)</td>
+<td>Licensed for non-commercial research or evaluation purposes only; commercial use needs a separate licence from Alibaba Cloud. Using the materials or their outputs to train or improve a model that is then distributed also requires displaying "Built with Qwen" or "Improved using Qwen" in the product documentation. Other Qwen2.5-Coder sizes are Apache-2.0, see above.</td>
+<td>2026-08-14</td>
 </tr></tbody></table>
-<p>The <code>small-events-discuss@apache.org</code> mailing list is for discussions on future small events, such as
-BarCampApaches, Meetups, Retreats and Hackathons. It is for discussing and planning small events that are
-not yet ready to seek final approval.</p>
-<table class="table">
-<thead>
-<tr>
-<th>Volume:</th>
-<th>Moderate</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Subscription address:</td>
-<td><a href="mailto:small-events-discuss-subscribe@apache.org">small-events-discuss-subscribe@apache.org</a></td>
-</tr>
-<tr>
-<td>Unsubscription address:</td>
-<td><a href="mailto:small-events-discuss-unsubscribe@apache.org">small-events-discuss-unsubscribe@apache.org</a></td>
-</tr>
-<tr>
-<td>Archives:</td>
-<td><a href="http://lists.apache.org/list.html?small-events-discuss@apache.org">Web archives</a></td>
-</tr>
-<tr>
-<td>Getting help with the list:</td>
-<td><a href="mailto:small-events-discuss-help@apache.org">small-events-discuss-help@apache.org</a></td>
-</tr></tbody></table>
-<h2 id="foundation-community">Community Mailing List<a class="headerlink" href="#foundation-community" title="Permalink">&para;</a></h2>
-<p>Participants in the ASF use the <code>dev@community.apache.org</code> mailing list to discuss community-related foundation-wide
-topics. Participation in this list is open to everyone, and public archives
-are available.</p>
-<p>This replaces the old <code>community@a.o</code>mailing list, disabled in 2014.</p>
-<table class="table">
-<thead>
-<tr>
-<th>Volume:</th>
-<th>Moderate</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Subscription address:</td>
-<td><a href="mailto:dev-subscribe@community.apache.org">dev-subscribe@community.apache.org</a></td>
-</tr>
-<tr>
-<td>Archives:</td>
-<td><a href="https://lists.apache.org/list.html?dev@community.apache.org">Web archives</a></td>
-</tr></tbody></table>
-<h2 id="foundation-infrastructure">Foundation Infrastructure Mailing List<a class="headerlink" href="#foundation-infrastructure" title="Permalink">&para;</a></h2>
-<p>The ASF Infrastructure team uses the <code>users@infra.apache.org</code> mailing list to discuss issues concerning operation of the
-overall Apache Software Foundation systems. Only committers to ASF projects can participate in this list.
-Non-committers may send mail to this address to report problems with ASF
-systems, however see the notes about <a href="https://infra.apache.org/stats.html" target="_blank">system status</a> before
-you do. See also information about other ways to <a href="https://infra.apache.org/contact.html" target="_blank">contact Infra</a>.</p>
-<h2 id="foundation-repository">Repository Mailing List<a class="headerlink" href="#foundation-repository" title="Permalink">&para;</a></h2>
-<p>Use the <code>repository@apache.org</code> mailing list to discuss
-foundation-wide issues relating to software distribution repositories, including
-our Apache Maven repository of other software releases. Participation in this list is open to everyone, and public archives
-are available.</p>
-<table class="table">
-<thead>
-<tr>
-<th>Volume:</th>
-<th>Moderate</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Subscription address:</td>
-<td><a href="mailto:repository-subscribe@apache.org">repository-subscribe@apache.org</a></td>
-</tr>
-<tr>
-<td>Archives:</td>
-<td><a href="https://lists.apache.org/list.html?repository@apache.org">Web archives</a></td>
-</tr></tbody></table>
-<h2 id="foundation-legal">Foundation Legal Discussion Mailing List<a class="headerlink" href="#foundation-legal" title="Permalink">&para;</a></h2>
-<p>The <code>legal-discuss@apache.org</code> is a forum for questions (even FAQs) that
-have a legal aspect. These questions may concern (for example)
-licensing, third party packages and contributor agreement questions. For
-questions related to trademarks, contact the
-<a href="https://www.apache.org/foundation/marks/contact">Brand Management commiteee</a>.
-This list will build into an ad-hoc knowledge base about
-those thorny legal issues that most commonly effect Apache projects. Please
-keep speculation to a minimum and avoid making authoritative statements
-without genuine knowledge of the subject.</p>
-<p>Volunteers willing to codify discussions into a FAQ are welcome.</p>
-<table class="table">
-<thead>
-<tr>
-<th>Volume:</th>
-<th>Moderate</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Subscription address:</td>
-<td><a href="mailto:legal-discuss-subscribe@apache.org">legal-discuss-subscribe@apache.org</a></td>
-</tr>
-<tr>
-<td>Unsubscription address:</td>
-<td><a href="mailto:legal-discuss-unsubscribe@apache.org">legal-discuss-unsubscribe@apache.org</a></td>
-</tr>
-<tr>
-<td>Archives:</td>
-<td>Raw gzipped <a href="/mail/legal-discuss/">mbox files</a><br/><a href="http://lists.apache.org/list.html?legal-discuss@apache.org">Web archives</a></td>
-</tr></tbody></table>
+<h2 id="not-classified">Not classified<a class="headerlink" href="#not-classified" title="Permalink">&para;</a></h2>
+<p>Not classified means there wasn't enough primary-source evidence to reach a category. It is an evidence gap, not a clearance and not a finding against the tool: treat the output as not cleared until the governing terms are obtained and reviewed.</p>
+<p>If a tool, tier, or model is not on this page at all, that is not a finding about it either way. It means nobody has reviewed its terms yet, and there are far more tools out there than we have reviewed. The same goes for versions: a model family may appear here with one licence while another release or size of it carries a different one.</p>
+<p>Some rows can't be classified because the answer isn't in the tool's own terms. Clients and runtimes where it depends on the model or provider you connect include Aider, Cline, Continue, Roo Code, OpenHands self-hosted, Goose, bolt.diy, Void, Kilo Code and OpenCode on BYOK, Tabby self-hosted, Ollama, and vLLM: check the terms of whatever you pointed them at. Only Anthropic's model layer has been reviewed for AWS Bedrock, so the other models offered through it, including Amazon's own and third-party ones, each need their own check.</p>
+<p>Others have public terms that are simply silent or incomplete on output rights, which is different from having no terms at all.</p>
+<p>Every row on this page reads a public document. Enterprise and other negotiated arrangements are not public, so no row covers them: if your organisation signed an agreement, order form, or MSA with the vendor, or accepted terms shown only inside a console when the service was set up, that is what governs your use, and it may say something different from the public tier. Ask whoever holds the agreement rather than relying on a row here.</p>
+<h2 id="updates">Updating this page<a class="headerlink" href="#updates" title="Permalink">&para;</a></h2>
+<p>If a vendor's terms change, a row is wrong, or a tool you use is missing, raise it on <a href="/foundation/mailinglists.html#foundation-legal">legal-discuss@</a> or open an issue in the <a href="https://issues.apache.org/jira/browse/LEGAL">LEGAL JIRA space</a>, quoting the primary terms document. Rows are only ever updated from primary sources: the terms themselves, not vendor marketing pages or press coverage.</p>
 
 </div>  </main>
   <section class="newsletter-signup grad-purple">

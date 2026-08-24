@@ -25,7 +25,7 @@
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#282661">
 
-  <title>ASF CLA FAQ | Apache Software Foundation</title>
+  <title>AI Agents and AGENTS.md Files (Draft) | Apache Software Foundation</title>
   <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
   <link href="/css/OpenSans.css" async rel="stylesheet">
   <link href="/css/min.bootstrap.css" async rel="stylesheet">
@@ -47,7 +47,7 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#pagefind-search" });
     });
-    var pageTitle = 'ASF CLA FAQ';
+    var pageTitle = 'AI Agents and AGENTS.md Files (Draft)';
     if(pageTitle === '404'){
       window.addEventListener('DOMContentLoaded', (event) => {
           new PagefindUI({ element: "#page-404-search" });
@@ -58,7 +58,7 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
 
 <!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
   <script>
-    var pageTitle = 'ASF CLA FAQ';
+    var pageTitle = 'AI Agents and AGENTS.md Files (Draft)';
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before
 "trackPageView" */
@@ -227,165 +227,61 @@ s=d.getElementsByTagName('script')[0];
                     <div class="flex-2 hero-title">
                         <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
                         <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
-                            <h1>ASF CLA FAQ</h1>
+                            <h1>AI Agents and AGENTS.md Files (Draft)</h1>
                     </div>
                         <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
                 </div>
             </div>
 
   <main id="maincontent">
-<div class="inner inner--default py-xl">    <p>This page answers common queries that we receive about our contribution agreements.</p>
+<div class="inner inner--default py-xl">    <p><strong>This page is a draft under review on legal-discuss. It is not yet ASF guidance.</strong></p>
+<div id="toc"><ul><li><a class="toc-href" href="#what-it-can-do" title="What an AGENTS.md can and cannot do">What an AGENTS.md can and cannot do</a></li><li><a class="toc-href" href="#what-to-put-in" title="What to put in your AGENTS.md">What to put in your AGENTS.md</a></li><li><a class="toc-href" href="#notes" title="Notes on the rules">Notes on the rules</a></li><li><a class="toc-href" href="#what-to-leave-out" title="What to leave out">What to leave out</a></li><li><a class="toc-href" href="#for-pmcs" title="For PMCs">For PMCs</a></li><li><a class="toc-href" href="#questions" title="Questions">Questions</a></li></ul></div>
+<p>An AGENTS.md file sits in a repository and tells AI coding agents how to work in it. Most projects use them for build commands and code style. They also do legal work, because an AGENTS.md is the only place an agent is reliably told what it must not do.</p>
+<p>This page covers what to put in one so that agents working in your project stay within the <a href="/legal/generative-tooling.html">Generative Tooling Guidance</a> and within the transparency rules that now apply to AI generated text published to the public. The wording below is a starting point; projects should adapt it.</p>
+<h2 id="what-it-can-do">What an AGENTS.md can and cannot do<a class="headerlink" href="#what-it-can-do" title="Permalink">&para;</a></h2>
+<p>Two different sets of rules reach AI use in a project, and an AGENTS.md serves them differently.</p>
+<p>The generative tooling guidance governs contributions. Its conditions are decisions a person makes: whether the tool's terms grant rights in the output, whether the output is copyrightable subject matter, whether third party material is present and properly licensed. An agent cannot make those decisions and should not be instructed as though it could. An agent that writes "no third party material" into a commit message has not checked anything; it has produced a record that looks considered and is not. What an agent can usefully do is record what it used, report what it found, and avoid destroying the information the contributor needs in order to answer honestly.</p>
+<p>The transparency rules govern publication. Since 2 August 2026 the EU AI Act has required whoever publishes AI generated text intended to inform the public to say that the text was AI generated, unless the text has been through human review and a named person holds editorial responsibility for publishing it. Releasing under an open source license does not exempt this. Here an AGENTS.md does more than record. An instruction telling the agent it may not publish, and that a named person approves before anything goes out, is the review and the responsibility the exemption asks for. Telling the human to review does not stop the agent posting. Telling the agent not to post does.</p>
+<p>So the rules below fall into two groups: rules that keep the agent out of the publishing step, and rules that keep the contribution record honest.</p>
+<h2 id="what-to-put-in">What to put in your AGENTS.md<a class="headerlink" href="#what-to-put-in" title="Permalink">&para;</a></h2>
+<p>Copy the following into your project's AGENTS.md and edit it to fit. Delete anything your project will not actually enforce, because a rule nobody follows is worse than no rule at all.</p>
+<pre><code>## AI agents
+
+These rules bind you. They cover anything you produce that may reach a public channel: code, release notes, security advisories, documentation, website content, and issue or mailing list replies.
+
+**Do not publish.** Write to a branch or a drafts directory. Do not post, merge, or push to a release channel. If a task needs something sent, write the text and say that a person must send it. Setting a triage label or status tag is not publishing.
+
+**Do not approve your own work.** A named person merges or posts it. Do not self-merge even where you have permission to.
+
+**You are not the contributor.** The person who submits the work makes the ICLA representations about it. Do not sign off as yourself, do not take the author line, and do not state that output is original, free of third party material, or not copyrightable.
+
+**Attribute your commits.** Use `Assisted-by: &lt;agent&gt; (&lt;model-id&gt;)` if a person decided the substance, or `Generated-by: &lt;agent&gt; (&lt;model-id&gt;)` if you originated it. Give the exact model identifier if you know it.
+
+**Never detach a notice.** Keep copyright notices, license headers, and attribution with the material they cover. If you reproduce something you can identify as coming from elsewhere, say so and name the source and license. If you cannot include it without stripping its notice, leave it out.
+
+**If you cannot follow a rule, stop and say which one.** Do not work around it.
+</code></pre>
+<h2 id="notes">Notes on the rules<a class="headerlink" href="#notes" title="Permalink">&para;</a></h2>
+<p><strong>The first two rules are the ones that carry legal weight.</strong> Not publishing, and requiring a named person to approve, are what satisfy the human review and editorial responsibility conditions in the EU transparency rules. They only work if the review is real. A project that merges agent output unread has the wording but not the substance.</p>
+<p><strong>The attribution lines follow the <a href="/legal/generative-tooling.html#include-in-contributions">existing recommendation</a></strong> to identify the tooling in the commit message. Splitting <code>Assisted-by</code> from <code>Generated-by</code> tells a later reviewer which contributions were AI led, which is the harder question to reconstruct afterwards.</p>
+<p><strong>The rule against detaching notices addresses the one failure mode agents cause routinely.</strong> Reformatting a file, tidying a header, or lifting a function into a new module can quietly separate a license notice from the code it covers. Once that has happened, nobody downstream can tell there was ever anything to check.</p>
+<h2 id="what-to-leave-out">What to leave out<a class="headerlink" href="#what-to-leave-out" title="Permalink">&para;</a></h2>
+<p>Some things do not belong in an AGENTS.md, either because the agent cannot do them or because putting them there implies a check that is not happening.</p>
 <ul>
-<li>For other licensing questions, see our <a href="../foundation/license-faq.html">Licensing FAQ</a>.</li>
-<li>For non-licensing questions, see our <a href="/foundation/preFAQ.html">General FAQ</a>.</li>
+<li><strong>Whether a tool's terms are acceptable.</strong> That question is settled before the agent is configured, and it depends on the exact tool, tier, access path, and feature. See <a href="/legal/generative-tooling-terms-contributors.html">Steps for Contributors and PMCs</a>.</li>
+<li><strong>Whether output is copyrightable.</strong> Unsettled, jurisdiction dependent, and not something a scan can answer.</li>
+<li><strong>Which of the guidance's three conditions a contribution relies on.</strong> That is a judgement for the contributor. An agent asked to name the condition will name one, and the answer will look considered without being so.</li>
+<li><strong>The ICLA representations.</strong> The contributor makes them. An agent is not a party to the ICLA.</li>
+<li><strong>The ongoing duty under ICLA section 8</strong> to notify the Foundation if the representations later turn out to be inaccurate. That runs after the contribution and rests with the contributor.</li>
+<li><strong>A visible "AI generated" label on published pages.</strong> If your project ever needs one, it belongs in the publishing pipeline. An agent usually has no control over how a page renders.</li>
 </ul>
-<h1 id="frequent-questions-about-asf-contribution-agreements">Frequent questions about ASF contribution agreements<a class="headerlink" href="#frequent-questions-about-asf-contribution-agreements" title="Permanent link">&para;</a></h1>
-<ol>
-<li>
-<p><a href="#CLA-Usage">May I re-use (and modify) the ASF Contributor License Agreements
-(CLAs) for my own purposes?</a></p>
-</li>
-<li>
-<p><a href="#PatentScope">What is the scope of patent grants made to the ASF?</a></p>
-</li>
-<li>
-<p><a href="#cclas-not-required">Are contributors' employers required to sign a CCLA?</a></p>
-</li>
-<li>
-<p><a href="#printer">How do I use a PDF form filler with the license document?</a></p>
-</li>
-<li>
-<p><a href="#upload-key">How do I upload my public key?</a></p>
-</li>
-</ol>
-<p>If none of the above addresses your query, please check the <a href="#resources">resources at
-the bottom of this page</a> for general information.</p>
-<h2 id="answers">Answers<a class="headerlink" href="#answers" title="Permalink">&para;</a></h2>
-<h3 id="CLA-Usage">May I re-use (and modify) the ASF Contributor License Agreements (CLAs) for my own purposes?<a class="headerlink" href="#CLA-Usage" title="Permalink">&para;</a></h3>
-<p>Yes, you may re-use and modify them. You just can't hold the ASF
-legally responsible if these documents are not exactly what you intend them
-to be. We recommend that you obtain your own legal advice so you know
-exactly what you are getting yourself into.</p>
-<p>And if you do adapt these agreements for your purposes, make
-sure that the phrase 'Apache Software Foundation' and any confusingly
-similar references or parts that specifically refer to the Apache
-organisation do not appear in your version of the agreements (except to
-note that your version is derived and differs from the original provided by
-the ASF).</p>
-<h3 id="PatentScope">What is the scope of patent grants made to the ASF?<a class="headerlink" href="#PatentScope" title="Permalink">&para;</a></h3>
-<style>
-  dl dt  {float: left}
-  dl dd  {margin-left: 3em}
-</style>
-<p>This is a four part question:</p>
-<dl>
-<dt>Q1:</dt>
-<dd>If I own a patent and contribute to a Work, and, at the time my
-     contribution is included in that Work, none of my patent's claims are
-     subject to Apache's Grant of Patent License, is there a way any of
-     those claims would later become subject to the Grant of Patent License
-     solely due to subsequent contributions by other parties who are not
-     licensees of that patent?
-  </dd>
-<dt>A1:</dt>
-<dd>No.</dd>
-<dt>Q2:</dt>
-<dd>If at any time after my contribution, I am able to license other
-     patent claims that would have been subject to Apache's Grant of Patent
-     License if they were licenseable by me at the time of my contribution,
-     do those other claims become subject to the Grant of Patent License?
-  </dd>
-<dt>A2:</dt>
-<dd>Yes.</dd>
-<dt>Q3:</dt>
-<dd>If I own or control a licensable patent and contribute code to a
-     specific Apache product, which of my patent claims are subject to
-     Apache's Grant of Patent License?
-  </dd>
-<dt>A3:</dt>
-<dd>The only patent claims that are licensed to the ASF are those you own
-     or have the right to license that read on your contribution or on the
-     combination of your contribution with the specific Apache product to
-     which you contributed as it existed at the time of your contribution.
-     No additional patent claims become licensed as a result of subsequent
-     combinations of your contribution with any other software. Note,
-     however, that licensable patent claims include those that you acquire
-     in the future, as long as they read on your original contribution as
-     made at the original time. Once a patent claim is subject to Apache's
-     Grant of Patent License, it is licensed under the terms of that Grant
-     to the ASF and to recipients of any software distributed by the ASF
-     for any Apache software product whatsoever.
-  </dd>
-<dt>Q4:</dt>
-<dd>What is an Apache product?
-<dt>A4:</dt>
-<dd>An Apache product is a body of software being developed by the ASF
-     that the ASF intends to both alter and to publish as a separate line
-     of releases.
-  </dd>
-</dd></dl>
-<h3 id="cclas-not-required">Are contributors' employers required to sign a CCLA?<a class="headerlink" href="#cclas-not-required" title="Permalink">&para;</a></h3>
-<p>Only if their employment situation necessitates that a CCLA be signed.
-See section 4 of the ICLA for details.</p>
-<p>Committers must sign an ICLA.  They make an individual claim that the code that
-they contribute is theirs to license.  Reviewing their ICLA against their
-employer's ownership interests, applicable state and national law, and specific
-aspects of their employment contract and business policies will reveal that
-they can or cannot make that claim regarding any particular commit to whichever
-particular project they are committing in.</p>
-<p>The CCLA is a backup document that the committer/ICLA signer may use to
-eliminate all of the ambiguity between conflicting laws, contracts,
-policies and job assignments.  We've never required it. Many committers
-are confident of their individual representations under the ICLA, many other
-committers find it reassuring that their company has backed up their own
-ICLA with this umbrella document.</p>
-<p>It is the ICLA signatory's call if it is required, but it isn't exactly an easy
-call for many committers employed in the IT/Software industry.</p>
-<p>Finally, see section 8 of the ICLA, which requires signers to notify the
-Foundation when their status changes in ways that may require this to
-be reassessed.</p>
-<h3 id="printer">How do I use a PDF form filler with the license document?<a class="headerlink" href="#printer" title="Permalink">&para;</a></h3>
-<p>ICLA, CCLA, SGA, and Member license documents are PDF forms with entry form fields.
-There is also space for a signature which must not be typed.
-Using a PDF form filler will allow the submitter to fill and sign the forms without printing them.
-Many browsers can now fill PDF forms directly, otherwise you will need to use a different tool.
-The precise steps needed depend on the operating system and tools used by the submitter.</p>
-<p><strong>Overview of process</strong></p>
-<ol>
-<li>Use your browser to navigate to the appropriate <a href="/licenses/contributor-agreements.html">PDF form found here</a>.</li>
-<li>Fill the form with your browser or download the file and open the file with a form filler (details below).</li>
-<li>Save the updated file.</li>
-<li>Open the email client and create a message to <a href="mailto:secretary@apache.org">secretary@apache.org</a>,
-attach the completed form (plus detached digital signature if used) and send it to secretary only.</li>
-<li>Keep the completed form for your records.</li>
-</ol>
-<p><em><strong>Firefox, Google Chrome, Microsoft Edge, Opera</strong></em></p>
-<p>Use the keyboard to fill in all the fields apart from the signature.
-For the signature, click on the "<strong>Draw</strong>" button.
-Use your mouse or keypad to draw your signature after 'Sign here:'</p>
-<p><em><strong>Safari / Apple Preview</strong></em></p>
-<p>Safari does not support form filling, so you will need to download the file and use Preview.
-For the signature, use the <strong>Tools-Annotate-Signature</strong> function to create a signature.
-This can then be added to the form and moved into the correct location.</p>
-<p><strong>Android users</strong> need a third-party tool to fill and attach a signature.</p>
-<p>First, install a PDF tool such as <strong>Adobe Acrobat</strong>.
-These instructions may differ somewhat if you are not using Adobe Acrobat.
-For the signature, use the <strong>Edit</strong> function and choose <strong>Fill &amp; Sign</strong> to attach a signature.</p>
-<h3 id="upload-key">How do I upload my public key?<a class="headerlink" href="#upload-key" title="Permalink">&para;</a></h3>
-<p>Upload your public key to one of the shared public key repositories:</p>
-<ul>
-<li><a href="https://keyserver.ubuntu.com">Ubuntu key server</a></li>
-<li><a href="https://keys.openpgp.org">OpenGPG key server</a>.</li>
-</ul>
-<h2 id="resources">Another place to look<a class="headerlink" href="#resources" title="Permalink">&para;</a></h2>
-<p>If you have questions about The Apache Software Foundation, its projects,
-or its software, we recommend the following link for more information or
-assistance:</p>
-<ul>
-<li>The Foundation pre-FAQ: <a href="/foundation/preFAQ.html">Contact Apache FAQ</a></li>
-</ul>
-<p>If you have a specific question about the Apache license or
-distribution of Apache software that this page has not answered, <a href="/legal/">contact the Legal Affairs Committee</a>.</p>
+<h2 id="for-pmcs">For PMCs<a class="headerlink" href="#for-pmcs" title="Permalink">&para;</a></h2>
+<p>Adopting the rules is the easy part. Three things need attention afterwards.</p>
+<p>The review has to be genuine. The rules make a named person's approval the record of editorial responsibility; they cannot make that approval considered. If agent contributions are merged on sight, the project has the paperwork and not the protection.</p>
+<p>Decide how far the publishing restriction reaches. The wording above applies it to every public channel, which is wider than the law strictly requires. That is the simpler line to hold, and it avoids arguing case by case about which outputs inform the public. Narrow it if you have a reason to.</p>
+<p>Only keep rules you follow. The publishing and approval rules do their legal work only where the practice matches them. A file stating that a named person approves every publication, in a project whose bot merges its own patches unattended, records the gap rather than closing it. If that is your project, either change the practice or drop the rule, and re-read the file whenever you change your automation.</p>
+<h2 id="questions">Questions<a class="headerlink" href="#questions" title="Permalink">&para;</a></h2>
+<p>If you are unsure whether a rule fits your project, or you think one of them conflicts with how your tooling works, raise it on the <a href="/foundation/mailinglists.html#foundation-legal">legal-discuss@</a> mailing list.</p>
 
 </div>  </main>
   <section class="newsletter-signup grad-purple">
