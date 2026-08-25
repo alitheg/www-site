@@ -176,12 +176,12 @@ our official [@TheASF Twitter](https://twitter.com/TheASF) account, or the
 | Archives: | [Web archives](http://lists.apache.org/list.html?announce@apache.org)<br />[archives](http://www.mail-archive.com/announce@apache.org/) |
 | Getting help with the list: |  [announce-help@apache.org](mailto:announce-help@apache.org)  |
 
-## Apache Conference Announcements  {#foundation-apachecon}
+## ASF Conference Announcements  {#foundation-apachecon}
 
-The Apache Conference planning committee uses the `announce@ApacheCon.Com` mailing list to make announcements about conferences, conventions,
+The ASF Conference planning committee uses the `announce@ApacheCon.Com` mailing list to make announcements about conferences, conventions,
 and trade shows in which the Foundation is participating. Only the Foundation posts Messages on this list; there is no discussion.
 
-You may also be interested in the [Community Over Code website](https://communityovercode.apache.org/] or the [Events blog](https://blogs.apache.org/conferences/](https://news.apache.org/foundation/entry/category/events).
+You may also be interested in the [Community Over Code website](https://communityovercode.apache.org/) or the [Events blog](https://news.apache.org/foundation/entry/category/events).
 
 | Volume: | Very low |
 |---------|----------|
