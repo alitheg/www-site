@@ -347,6 +347,14 @@ form may be used.</p>
 <p>Provide any additional licensing information relevant to the file (ie. that would ordinarily be in the NOTICE)
 directly in the file when the short form is used.</p>
 <p>PMCs should use their judgement, err on having a full source header and contact legal-discuss@ if unsure.</p>
+<h3 id="is-an-spdx-form-of-the-source-header-acceptable">Is an SPDX form of the source header acceptable?<a class="headerlink" href="#is-an-spdx-form-of-the-source-header-acceptable" title="Permalink">&para;</a></h3>
+<p>Yes. A header conveying the same information as the standard header in SPDX tags may be used in its place:</p>
+<pre><code>SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: See the NOTICE file distributed with this work for additional information regarding copyright ownership
+SPDX-FileContributor: Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements
+</code></pre>
+<p>All three lines are required. A bare <code>SPDX-License-Identifier</code> on its own is not sufficient, because it conveys the license grant but not the NOTICE pointer or the contribution provenance. As with the standard header, the lines may sit within a comment or within file metadata where that is the natural place for them.</p>
+<p>This is an additional option, not a replacement. Existing files need not be changed.</p>
 <h3 id="faq-binaries">Does the policy apply to binary/object files, such as executables or JAR files?<a class="headerlink" href="#faq-binaries" title="Permalink">&para;</a></h3>
 <p>Yes.  Even if there are no source files within the release, the LICENSE file and NOTICE file are still both required within
 every ASF distribution -- whether the unit of distribution is a .jar, .msi, .tar.gz, .zip, .exe installer, or any
