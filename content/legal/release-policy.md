@@ -408,7 +408,7 @@ Test packages are for use by consenting developers and interested community
 members only, so they should not be hosted or linked on pages intended for end
 users, or released using a `closer.lua` script.
 
-Projects should use either the new [Apache Trusted Releases](https://releases.apache.org) platform or
+Projects should use either the new [Apache Trusted Releases](https://releases.apache.org) platform or the
 [`/dev` tree of the `dist` repository](https://dist.apache.org/repos/dist/dev) to stage releases.
 The staging features of repository.apache.org may be used
 to host release candidates posted for developer testing/voting (prior to being,
